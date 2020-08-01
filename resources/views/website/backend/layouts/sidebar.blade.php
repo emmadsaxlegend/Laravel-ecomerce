@@ -2,16 +2,16 @@
     <div class="menu_section">
       <h3>General</h3>
       <ul class="nav side-menu">
-        <li><a href="{{ route('productcategory.index')}}"><i class="fa fa-briefcase"></i> Product Category </a>
-          {{-- <ul class="nav child_menu">
-            <li><a href="index.html">Dashboard</a></li>
-            <li><a href="index2.html">Dashboard2</a></li>
-            <li><a href="index3.html">Dashboard3</a></li>
-          </ul> --}}
+        <li><a><i class="fa fa-briefcase"></i> Products<span class="fa fa-chevron-down"></a>
+          <ul class="nav child_menu">
+            <li><a href="{{ route('productcategory.index')}}">Product Category</a></li>
+            <li><a href="{{ route('product.index')}}">Product</a></li>
+            <li><a href="{{ route('productImage.index')}}">Product Images </a></li>
+          </ul>
         </li>
 
-        <li><a href="{{ route('productcategory.index')}}"><i class="fa fa-archive"></i> Product</a>
-        </li>
+        {{-- <li><a href="{{ route('productcategory.index')}}"><i class="fa fa-archive"></i> Product</a>
+        </li> --}}
 
 
         {{-- <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>

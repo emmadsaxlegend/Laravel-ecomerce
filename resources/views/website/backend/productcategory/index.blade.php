@@ -31,7 +31,8 @@
                 <th class="sorting" tabindex="0" aria-controls="datatable-responsive" rowspan="1" colspan="1" style="width: 46px;" aria-label="Extn.: activate to sort column ascending">Status</th>
                 <th class="sorting" tabindex="0" aria-controls="datatable-responsive" rowspan="1" colspan="1" style="width: 46px;" aria-label="Extn.: activate to sort column ascending">Action</th>
 
-                
+                <th class="sorting" tabindex="0" aria-controls="datatable-responsive" rowspan="1" colspan="1" style="width: 77px;" aria-label="Last name: activate to sort column ascending"></th>
+
             </tr>
           </thead>
           <tbody>
@@ -42,18 +43,21 @@
           <tr role="row">
               <td>{{$procat->brand_name }}</td>
               <td>{{$procat->status }}</td>
+
               <td>
                 <a class="btn btn-app" href="{{route('productcategory.edit',$procat->id)}}">
                     <i class="fa fa-edit"></i> Edit
                 </a>
+              </td>
 
-                <form method="POST" action="{{ route('productcategory.destroy',$procat->id)}}">
-                    @csrf
-                    @method('delete')
-                <button class="btn btn-app">
-                    <i class="fa fa-trash"></i> Delete
-                </button>
-                </form>
+              <td>
+                    <form method="POST" action="{{ route('productcategory.destroy',$procat->id)}}">
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-app">
+                            <i class="fa fa-trash"></i> Delete
+                        </button>
+                    </form>
               </td>
 
           </tr>

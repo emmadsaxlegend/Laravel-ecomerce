@@ -30,3 +30,5 @@ Route::resource('/dashboard/productcategory','ProductCategoryController');
 
 Route::resource('/dashboard/product','ProductController');
 
+Route::resource('/dashboard/productImage','ProductImageController');
+

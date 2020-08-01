@@ -12,6 +12,7 @@ class Product extends Model
     'price',
     'slug',
     'status',
+    'product_desc',
     'category_id'
     ];
 
@@ -19,7 +20,7 @@ class Product extends Model
         return $this->belongsTo('App\models\ProductCategory');
 
     }
-    public function product_image(){
+    public function productImage(){
         return $this->hasMany('App\models\ProductImage');
     }
 }
