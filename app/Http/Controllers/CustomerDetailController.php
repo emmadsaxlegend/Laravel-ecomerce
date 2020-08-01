@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\models\CustomerDetails;
+use App\models\CustomerDetail;
 use Illuminate\Http\Request;
 
-class CustomerDetailsController extends Controller
+class CustomerDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class CustomerDetailsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\models\CustomerDetails  $customerDetails
+     * @param  \App\models\CustomerDetail  $customerDetail
      * @return \Illuminate\Http\Response
      */
-    public function show(CustomerDetails $customerDetails)
+    public function show(CustomerDetail $customerDetail)
     {
         //
     }
@@ -52,10 +52,10 @@ class CustomerDetailsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\models\CustomerDetails  $customerDetails
+     * @param  \App\models\CustomerDetail  $customerDetail
      * @return \Illuminate\Http\Response
      */
-    public function edit(CustomerDetails $customerDetails)
+    public function edit(CustomerDetail $customerDetail)
     {
         //
     }
@@ -64,10 +64,10 @@ class CustomerDetailsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\models\CustomerDetails  $customerDetails
+     * @param  \App\models\CustomerDetail  $customerDetail
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CustomerDetails $customerDetails)
+    public function update(Request $request, CustomerDetail $customerDetail)
     {
         //
     }
@@ -75,10 +75,10 @@ class CustomerDetailsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\models\CustomerDetails  $customerDetails
+     * @param  \App\models\CustomerDetail  $customerDetail
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CustomerDetails $customerDetails)
+    public function destroy(CustomerDetail $customerDetail)
     {
         //
     }

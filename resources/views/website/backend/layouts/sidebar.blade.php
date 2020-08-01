@@ -2,6 +2,7 @@
     <div class="menu_section">
       <h3>General</h3>
       <ul class="nav side-menu">
+
         <li><a><i class="fa fa-briefcase"></i> Products<span class="fa fa-chevron-down"></a>
           <ul class="nav child_menu">
             <li><a href="{{ route('productcategory.index')}}">Product Category</a></li>
@@ -10,6 +11,19 @@
           </ul>
         </li>
 
+        <li><a><i class="fa fa-briefcase"></i> Payments and Customer <span class="fa fa-chevron-down"></a>
+            <ul class="nav child_menu">
+              <li><a href="{{ route('productcategory.index')}}">Customer Details</a></li>
+              <li><a href="{{ route('product.index')}}">Payment</a></li>
+            </ul>
+        </li>
+
+        <li><a><i class="fa fa-briefcase"></i> Contacts <span class="fa fa-chevron-down"></a>
+            <ul class="nav child_menu">
+              <li><a href="{{ route('productcategory.index')}}">Company Details</a></li>
+              <li><a href="{{ route('product.index')}}">Customer Form</a></li>
+            </ul>
+          </li>
         {{-- <li><a href="{{ route('productcategory.index')}}"><i class="fa fa-archive"></i> Product</a>
         </li> --}}
 

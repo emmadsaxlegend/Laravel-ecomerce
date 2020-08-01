@@ -91,7 +91,7 @@ class ProductImageController extends Controller
         $slug=Str::slug($request->img_title,'-');
 
         if($request->hasFile('img')){
-            // dd($request->img);
+            //dd($request->img);
         $image =time().'.'.$request->img->extension();
 
         $request->img->move(public_path('images'), $image);
