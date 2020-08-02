@@ -14,7 +14,8 @@ class CustomerDetailController extends Controller
      */
     public function index()
     {
-        //
+        $customerDetail=CustomerDetail::all();
+        return view('website\backend\customerdetail\index', compact('customerDetail'));
     }
 
     /**
@@ -24,7 +25,7 @@ class CustomerDetailController extends Controller
      */
     public function create()
     {
-        //
+        return view('website\backend\customerdetail\create');
     }
 
     /**
@@ -35,7 +36,8 @@ class CustomerDetailController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        CustomerDetail::create($request->all());
+        return redirect()->route('customerdetail.index');
     }
 
     /**
@@ -57,7 +59,8 @@ class CustomerDetailController extends Controller
      */
     public function edit(CustomerDetail $customerDetail)
     {
-        //
+
+        return view('website.backend.customerdetail.update', compact('customerDetail'));
     }
 
     /**
@@ -69,7 +72,8 @@ class CustomerDetailController extends Controller
      */
     public function update(Request $request, CustomerDetail $customerDetail)
     {
-        //
+        $customerDetail->create($request->all());
+        return redirect()->route('customerdetail.index');
     }
 
     /**
@@ -80,6 +84,7 @@ class CustomerDetailController extends Controller
      */
     public function destroy(CustomerDetail $customerDetail)
     {
-        //
+        $customerDetail->delete();
+        return redirect()->route('customerdetail.index');
     }
 }

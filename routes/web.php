@@ -33,8 +33,8 @@ Route::resource('/dashboard/product','ProductController');
 Route::resource('/dashboard/productImage','ProductImageController');
 
 
-Route::resource('/dashboard/customerdetail','CustomerDetailsController');
+Route::resource('/dashboard/customerdetail','CustomerDetailController');
 Route::resource('/dashboard/payment','PaymentController');
 Route::resource('/dashboard/contact','ProductImageController');
-Route::resource('/dashboard/productImage','ProductImageController');
+Route::resource('/dashboard/contactForm','ProductImageController');
 

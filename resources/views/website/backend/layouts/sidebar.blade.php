@@ -13,8 +13,8 @@
 
         <li><a><i class="fa fa-briefcase"></i> Payments and Customer <span class="fa fa-chevron-down"></a>
             <ul class="nav child_menu">
-              <li><a href="{{ route('productcategory.index')}}">Customer Details</a></li>
-              <li><a href="{{ route('product.index')}}">Payment</a></li>
+              <li><a href="{{ route('customerdetail.index')}}">Customer Details</a></li>
+              <li><a href="{{ route('payment.index')}}">Payment</a></li>
             </ul>
         </li>
 
